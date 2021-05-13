@@ -1,0 +1,29 @@
+<div class="container-fluid p-0">
+  <div class="row m-0 _bower-warning yz-show-update-bower-tips" *ngIf="showUpdateBowerTips">
+    <div class="col-md-12 text-center">
+      <p>
+        <b>
+          检测到您当前使用了基于IE内核的浏览器,部分功能可能无法正常工作,建议您切换为<a href="https://www.firefox.com.cn/" target="_blank">firefox</a>或<a
+          href="https://www.google.cn/chrome/" target="_blank">chrome</a>浏览器。
+        </b>
+      </p>
+    </div>
+  </div>
+  <div class="header">
+    <div class="row m-0">
+      <div class="col-md-3 offset-md-2">
+        <p class="title"><b>欢迎使用本系统!</b></p>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div class="footer text-center">
+    <small>©{{year}} 河北工业大学 <a href="https://jzyyssjxy.hebut.edu.cn/" target="_blank">建筑与艺术设计学院</a> 版本号:V{{version}}({{apiVersion}})</small>
+    <br>
+    <small (click)="onShowYz()" class="yz-support">技术支持: 梦云智开发团队</small>
+  </div>
+</div>

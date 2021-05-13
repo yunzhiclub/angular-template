@@ -1,0 +1,4 @@
+<ng-container *ngIf="init">
+  <router-outlet *ngIf="!login"></router-outlet>
+  <router-outlet name="login"></router-outlet>
+</ng-container>
